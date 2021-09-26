@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- welcome screen -->
+    <div class="device animate__device animate__backInLeft">
+      <div class="device_screen screen-layout bg-ebony ">
+        <div class="cut"></div>
+
+        <!-- header -->
+        <div class="header">
+          <span>9:41</span>
+          <div class="icon icon-white">
+            <div class="img masked-signal "></div>
+            <div class="img masked-wifi "></div>
+            <div class="img masked-battery "></div>
+          </div>
+        </div>
+
+        <!-- welcome screen -->
+        <div class="device_screen--1">
+          <section class="hero-section">
+            <div class="intro-img">
+              <img src="./images/yoga.svg" alt="yoga-girl" />
+            </div>
+            <div class="content">
+              <div class="heading">
+                <p>Welcome to</p>
+                <h1>Power Yoga Club</h1>
+              </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique,
+                consequuntur natus omnis a ad aperiam autem ex impedit.
+              </div>
+            </div>
+          </section>
+
+          <div class="action-button">
+            <button id="signup">Sign Up</button>
+            <button id='login'>Login in</button>
+          </div>
+        </div>
+
+        <footer>
+          <div>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
+          <div class="bar"></div>
+        </footer>
+
+      </div>
+    </div>
+
+    <!-- Register Screen -->
+    <div id="signup-screen" class="device device--2 animate__screen animate__backer">
+      <div class="device_screen screen-layout bg-ebony">
+        <div class="cut"></div>
+
+        <!-- header -->
+        <div class="header">
+          <span>9:41</span>
+          <div class="icon icon-white">
+            <div class="img masked-signal"></div>
+            <div class="img masked-wifi"></div>
+            <div class="img masked-battery"></div>
+          </div>
+        </div>
+
+
+        <div class="device_screen--2">
+          <button id="backSignup" class="back-icon"></button>
+
+          <div class="sub-header">
+            <h1>
+              Get Started Now
+            </h1>
+            <span>It's free to join and gain full access to the smart yoga program</span>
+          </div>
+
+          <form id="registerForm">
+            <div class="input-wrapper">
+              <label for="username">Username</label>
+              <input name="Username" type="text" id="username" placeholder="Username" />
+              <small class="not-visible"></small>
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input name="Email" type="text" id="email" placeholder="Email" />
+              <small class="not-visible"></small>
+            </div>
+            <div class="input-wrapper">
+              <label for="password">Password</label>
+              <input name="Password" type="password" id="password" placeholder="Password" />
+              <small class="not-visible"></small>
+            </div>
+            <div class="input-wrapper">
+              <label for="confirm-password">Confirm Password</label>
+              <input name="Confirm Password" type="password" id="confirm-password" placeholder="Confirm Password" />
+              <small class="not-visible"></small>
+            </div>
+            <button type="submit">Register</button>
+          </form>
+
+          <footer>
+            <div class="bar"></div>
+          </footer>
+
+        </div>
+      </div>
+
+    </div>
+
+     <!-- Login Screen -->
+     <div id="login-screen" class="device device--3 animate__screen animate__backer">
+      <div class="device_screen screen-layout bg-ebony">
+        <div class="cut"></div>
+
+        <!-- header -->
+        <div class="header">
+          <span>9:41</span>
+          <div class="icon icon-white">
+            <div class="img masked-signal"></div>
+            <div class="img masked-wifi"></div>
+            <div class="img masked-battery"></div>
+          </div>
+        </div>
+
+
+        <div class="device_screen--2">
+          <button id="backLogin" class="back-icon"></button>
+
+          <div class="sub-header">
+            <h1>
+              Login
+            </h1>
+            <span>See your growth</span>
+          </div>
+
+          <form id="loginForm">
+            <div class="input-wrapper">
+              <label for="emailLogin">Email</label>
+              <input name="Email" type="text" id="emailLogin" placeholder="Email" />
+              <small class="not-visible"></small>
+            </div>
+            <div class="input-wrapper">
+              <label for="passwordLogin">Password</label>
+              <input name="Password" type="password" id="passwordLogin" placeholder="Password" />
+              <small class="not-visible"></small>
+            </div>
+           
+            <button type="submit">Login</button>
+          </form>
+
+          <footer>
+            <div class="bar"></div>
+          </footer>
+
+        </div>
+      </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

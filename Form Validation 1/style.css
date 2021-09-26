@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+button img {
+  pointer-events: none;
+}
+
+input {
+  border: none;
+}
+input::placeholder {
+  color: #b8817d;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-wrapper {
+  min-height: 100vh;
+  width: 100%;
+}
+.site-wrapper .hero-section {
+  position: relative;
+  padding-top: 40px;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(84, 88, 113, 0.7), rgba(84, 88, 113, 0.7)), url("./bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.site-wrapper .hero-section .main-content {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.site-wrapper .hero-section .main-content .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-wrapper .hero-section .main-content .header-wrap .header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #f7eceb;
+}
+.site-wrapper .hero-section .main-content .header-wrap .header img {
+  margin-right: 14px;
+  height: 98%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .site-wrapper .hero-section .main-content .header-wrap .header {
+    height: 35px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .site-wrapper .hero-section .main-content .header-wrap .header img {
+    margin-right: 8.5px;
+    height: 98%;
+    object-fit: cover;
+  }
+}
+.site-wrapper .hero-section .main-content .header-wrap nav ul {
+  display: flex;
+  grid-gap: 50px;
+  gap: 50px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.site-wrapper .hero-section .main-content .header-wrap nav ul li {
+  cursor: pointer;
+}
+.site-wrapper .hero-section .main-content .header-wrap nav ul li:hover {
+  text-decoration: underline;
+}
+.site-wrapper .hero-section .main-content .header-wrap .menu-btn {
+  display: none;
+}
+.site-wrapper .hero-section .main-content .header-wrap .menu-show {
+  display: block;
+}
+.site-wrapper .hero-section .main-content .header-wrap .menu-hide {
+  display: none;
+}
+.site-wrapper .hero-section .main-content .header-wrap .backdrop {
+  position: fixed;
+  inset: 0 0 0 0;
+  background-color: #ffffff;
+}
+.site-wrapper .hero-section .main-content .header-wrap .backdrop button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.site-wrapper .hero-section .main-content .header-wrap .backdrop ul {
+  margin-top: 40px;
+}
+.site-wrapper .hero-section .main-content .header-wrap .backdrop ul li {
+  padding: 20px;
+  text-align: center;
+}
+.site-wrapper .hero-section .main-content .header-wrap .backdrop ul li:hover {
+  background-color: #c1c1c1;
+}
+@media (max-width: 768px) {
+  .site-wrapper .hero-section .main-content .header-wrap nav {
+    display: none;
+  }
+  .site-wrapper .hero-section .main-content .header-wrap .menu-btn {
+    display: block;
+  }
+}
+.site-wrapper .hero-section .main-content .content-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  height: calc(100vh - 65px - 180px);
+}
+@media (max-width: 768px) {
+  .site-wrapper .hero-section .main-content .content-wrap {
+    height: calc(100vh - 35px - 40px);
+  }
+}
+.site-wrapper .hero-section .main-content .content-wrap .text {
+  width: 65%;
+  padding-right: 135px;
+  color: #ffffff;
+}
+.site-wrapper .hero-section .main-content .content-wrap .text h1 {
+  font-size: 51px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.site-wrapper .hero-section .main-content .content-wrap .text h2 {
+  margin-top: 15px;
+  font-size: 28px;
+  font-weight: 300;
+}
+.site-wrapper .hero-section .main-content .content-wrap .text > div {
+  margin-top: 70px;
+}
+.site-wrapper .hero-section .main-content .content-wrap .text > div button {
+  margin-bottom: 20px;
+  padding: 8px 28px;
+  font-size: 20px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+.site-wrapper .hero-section .main-content .content-wrap .text > div p {
+  font-weight: 300;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form {
+  position: relative;
+  margin-top: 20px;
+  padding: 53px 38px 45px;
+  max-width: 400px;
+  max-height: 650px;
+  width: 100%;
+  height: 100%;
+  background-color: #f7eceb;
+  border-radius: 30px;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .logo {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .input-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .input-field label {
+  margin-bottom: 12px;
+  color: #545871;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .input-field input {
+  border: 1px solid #e6dbda;
+  padding: 15px 17px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .input-field .error {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  left: 5px;
+  font-size: 13px;
+  color: #940404;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form a {
+  display: block;
+  font-size: 13px;
+  color: #545871;
+  letter-spacing: 0.02em;
+  text-align: right;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .bottom-container {
+  position: absolute;
+  left: 0;
+  bottom: 45px;
+  width: 100%;
+  text-align: center;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .bottom-container button {
+  margin-bottom: 35px;
+  padding: 8px 60px;
+  font-size: 16px;
+  color: #545871;
+  letter-spacing: 0.02em;
+  background-color: #ebd0ce;
+  border-radius: 100px;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .bottom-container a {
+  text-align: center;
+}
+.site-wrapper .hero-section .main-content .content-wrap .login-form .bottom-container a span {
+  color: #b8817d;
+}
+
+/*# sourceMappingURL=style.css.map */

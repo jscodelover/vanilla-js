@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+		<title>Form Validation</title>
+	</head>
+	<body>
+		<main class="site-wrapper">
+			<article class="hero-section">
+				<section class="main-content">
+					<!-- header -->
+					<header class="header-wrap" id="header">
+						<!-- logo -->
+						<div class="header">
+							<img srcset="educa-logo@2x.png 2x, educa-logo 1x" src="educa-logo.png" />
+							<div>EDUCA</div>
+						</div>
+
+						<!-- nav list -->
+						<template id="nav-list">
+							<ul>
+								<li>Home</li>
+								<li>About</li>
+								<li>Service</li>
+							</ul>
+						</template>
+
+						<button class="menu-btn" id="menu-btn">
+							<img src="menu.svg" alt="menu-icon" />
+						</button>
+
+						<!-- back drop for nav in mobile -->
+						<template id="backdrop-template">
+							<div class="backdrop" id="backdrop">
+								<button id="close-icon">
+									<img src="close-icon.svg" alt="close-icon" />
+								</button>
+								<ul>
+									<li>Home</li>
+									<li>About</li>
+									<li>Service</li>
+								</ul>
+							</div>
+						</template>
+					</header>
+
+					<div class="content-wrap">
+						<section class="text">
+							<h1>Every last child deserves the opportunity to learn.</h1>
+							<h2>Educate a poor rural child in need</h2>
+							<div>
+								<button>Donate</button>
+								<p>
+									Donations will sponsor the tuition and school supplies for a child.
+								</p>
+							</div>
+						</section>
+						<form class="login-form"  onsubmit="">
+							<div class="logo">
+								<img
+									srcset="form-educa-logo@2x.png 2x, form-educa-logo 1x"
+									src="form-educa-logo.png"
+								/>
+							</div>
+							<div class="input-field">
+								<label for="email">Email Id</label>
+								<input type="email" id="email" placeholder="Email Id" />
+								<div class="error" id="err-email">Invalid Email</div>
+							</div>
+							<div class="input-field">
+								<label for="password">Password</label>
+								<input type="password" id="password" placeholder="Password" />
+								<div class="error" id="err-pwd">Password should be greater than 8 characters</div>
+							</div>
+
+								<a href="#">Forgot Password ?</a>
+							<div class="bottom-container">
+								<button>Login</button>
+
+								<a href="#">Need a new Account? <span>Sign Up</span></a>
+							</div>
+						</form>
+					</div>
+				</section>
+			</article>
+		</main>
+
+		<script src="./script.js" type="module"></script>
+	</body>
+</html>
